@@ -23,12 +23,6 @@ h2 {
 	color: white;
 }
 
-.navUL {
-	display: flex;
-	padding: 0;
-	margin: 0;
-	border-bottom: 1px solid black;
-}
 
 ul {
 	text-align: center;
@@ -66,5 +60,19 @@ footer {
 	text-align: left;
 	color: white;
 }
+
+.navUL {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid black;
+}
+
+.footer {
+	
+}
+
+
+
 
 
