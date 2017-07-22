@@ -7,3 +7,10 @@
 1. When the user hovers over one of the links, the color of the text should change.
 2. When the user hovers over one of the links, the background color of the element that contains the link should change.
 3. When the user clicks on one of the links, the element that contains the link should grow in size by 5px on the left and right.
+
+
+-start thinking about fonts and what will be in a flexbox
+-
+	font-family: 'Gruppo', cursive;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
