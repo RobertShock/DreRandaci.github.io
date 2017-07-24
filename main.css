@@ -1,82 +1,120 @@
 
+/*--------------
+
+MAIN STYLES
+
+---------------*/
+
 body {
 	background-color: #5bb689;
 }
-
 header {
 	text-align: center;
-	/*background-color: #429369; */	
-
 }
-
 h1 {
 	text-align: center;
 	color: white;
 }
-
-h1:hover {
-	color: #429369;
-}
-
 h2 {
 	text-align: center;
 	color: white;
 }
-
-
-ul {
-	text-align: center;
-	padding: 0;
+h4 {
+	font-size: 24px;
 	margin: 0;
 }
 
-li {
-	display: inline;
-	width: 100%;
-	font-weight: bolder;
-	font-size: 17px; 
+h5 {
+	margin: 0;
 }
 
 a {
 	text-decoration: none;
 	color: black;
 }
-
-a:hover {
-	color: white;
-	background-color: #429369; 
+ul {
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
-
-a:active {
-	font-size: 22px;
+li {
+	display: inline;
+	width: 100%;
+	font-weight: bolder;
+	font-size: 17px; 
 }
-
 p {
 	text-align: center;
 }
-
 footer {
 	text-align: center;
 	padding: 4em 0; 
 }
 
+/*--------------
+
+Pseudo Classes
+
+---------------*/
+
+h1:hover {
+	color: #000;
+}
+a:hover {
+	color: white;
+	background-color: #429369; 
+	/*font-size: 22px;*/
+}
+a:active {
+	font-size: 22px;
+}
+
+/*--------------
+
+Classes
+
+---------------*/
+
 .notCentered {
 	text-align: left;
 	color: white;
 }
-
 .navUL {
 	display: flex;
 	padding: 0;
 	margin: 0;
 	border-bottom: 1px solid black;
 }
-
-.footer {
-	
+.card-container {	
+	width: 350px;
+	border: 2px solid #429369;
+	margin: 1%;
+	background-color: ghostwhite;
+}
+.card-header {
+	text-align: center;
 }
 
+.entry {
+	text-align: center;
+	margin: 0;
+	padding: 3%;
+}
+.footer {
 
+}
+
+/*--------------
+
+Flex layout
+
+---------------*/
+
+#blog-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 
 
 
