@@ -79,29 +79,34 @@ Classes
 	text-align: left;
 	color: white;
 }
-.navUL {
-	display: flex;
-	padding: 0;
-	margin: 0;
-	border-bottom: 1px solid black;
-}
 .card-container {	
 	width: 350px;
 	border: 2px solid #429369;
 	margin: 1%;
-	background-color: ghostwhite;
+	background-color: #F3F3F3;	
 }
 .card-header {
 	text-align: center;
+	padding: 1em;
+	opacity: 0.8;
 }
 
 .entry {
 	text-align: center;
 	margin: 0;
-	padding: 3%;
+	padding: 3% 6%;
+	opacity: 0.8;
+}
+.contactMe {
+	width: 500px;
+	height: 150px;
+	margin: 5%;	
+}
+.contactMe li {
+	padding: 1em;
 }
 .footer {
-
+	padding: 0;
 }
 
 /*--------------
@@ -110,11 +115,23 @@ Flex layout
 
 ---------------*/
 
+#navUL {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid black;
+}
+
 #blog-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
+#contactMeFlexbox {
+	display: flex;	
+	padding: 0;
+	margin: 2%;
+	justify-content: center;	
+}
 
 
