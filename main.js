@@ -12,7 +12,7 @@ let blog1 = {
 	date: "07/25/2017"
 };
 let blog2 = {
-	title: "Javascript: Where am I?",
+	title: "Javascript: Do you know where YOUR variables are defined?",
 	content: "Javascript is intimidating and mind bending; so much power with such little code! The possibilites are endless with how you use it. I'm not going to pretend like I fully understand it yet, as I struggled with the YDKJS: Tax Rate challenge but nearly came close to getting it correct. Starting to see some progress and less blank staring at my laptop screen (although, this is likely to come back around as class gets denser!).",
 	date: "07/28/2017"
 };
