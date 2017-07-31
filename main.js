@@ -17,9 +17,9 @@ let blog2 = {
 	date: "07/28/2017"
 };
 let blog3 = {
-	title: "entry3",
-	content: "Now this is a story all about how my life got twist turned upside down, I'd like to take a minute, just sit right there, I'll tell you how I became a software coding extraordinaire.",
-	date: "07/30/2017"
+	title: "Javascript, tho",
+	content: "So, we had the 'Coin Counter' exercise this week, which basically helped to kick my arse into high gear for what's to come. As frustrating as JS can be, there is an immense satisfaction in finding solutions. Things I learned during this exercise: 1) If in doubt, start wherever you know. Try things. Try a lot of things. Especially in codewars (holy shit, hard af right now but super helpful and fun). 2) When working with others or in groups, make sure to try and tackle one problem at a time. Things can branch off quickly and get murky. Otherwise, I just need to keep practicing and working on as many different problems as possible."
+	date: "07/31/2017"
 };
 let blog4 = {
 	title: "entry4",
