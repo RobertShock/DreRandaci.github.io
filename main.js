@@ -22,13 +22,18 @@ let blog3 = {
 	date: "07/31/2017"
 };
 let blog4 = {
-	title: "entry4",
-	content: "Now this is a story all about how my life got twist turned upside down, I'd like to take a minute, just sit right there, I'll tell you how I became a software coding extraordinaire.",
-	date: "08/01/2017"
+	title: "JAVASCRIPT, you're like Panera's day old bread",
+	content: "Fresh yesterday, stale today, and salty tomorrow! This may seem harsh, but there are positive qualities to this analogy I'd like to promulgate – but before I do that, I will say JS is awesomely challenging. Very algebraic and openly solvent, it has inspred me to relearn some mathematical concepts that have been dead to me for years. As far as being fresh and salty, it is just that; accepting of multitudes of solutions, yet ready to kick you to the curb when you forget to text it a winky face before bed. So far I feel great about it. I just need to work on economizing my actual computations.",
+	date: "08/03/2017"
 };
 let blog5 = {
-	title: "entry5",
-	content: "Now this is a story all about how my life got twist turned upside down, I'd like to take a minute, just sit right there, I'll tell you how I became a software coding extraordinaire.",
+	title: "Group Project: Tempreture Converter af",
+	content: "We started our first group project this week. So far, we've just put assembled the github tickets in the project folder. Getting the group brainstorming ideas on how to propagate the different coding tasks has been one of the best parts of class thus far. Having creative and different inputs on how to solve problems is incredibly motivating and inpiring. Team #fontourage is going big.",
+	date: "08/04/2017"
+};
+let blog6 = {
+	title: "entry6",
+	content: "Now this is a story all about how my life got twist turned upside down, I'd like to take a minute, just sit right there, I'll tell you how I became a software developing extraordinaire.",
 	date: "08/03/2017"
 };
 blogs.push(blog1);
@@ -36,7 +41,7 @@ blogs.push(blog2);
 blogs.push(blog3);
 blogs.push(blog4);
 blogs.push(blog5);
-console.log(blogs)
+blogs.push(blog6);
 let blogContainer = document.getElementById("blog-container");
 for (let i = 0; i < blogs.length; i++) {
 	let currentBlog = blogs[i];
