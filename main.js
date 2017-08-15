@@ -18,7 +18,7 @@ let blog2 = {
 };
 let blog3 = {
 	title: "Javascript, tho",
-	content: "So, we had the 'Coin Counter' exercise this week, which basically helped to kick my arse into high gear for what's to come. As frustrating as JS can be, there is an immense satisfaction in finding solutions. Things I learned during this exercise: 1) If in doubt, start wherever you know. Try things. Try a lot of things. Especially in codewars (holy shit, hard af right now but super helpful and fun). 2) When working with others or in groups, make sure to try and tackle one problem at a time. Things can branch off quickly and get murky. Otherwise, I just need to keep practicing and working on as many different problems as possible."
+	content: "So, we had the 'Coin Counter' exercise this week, which basically helped to kick my arse into high gear for what's to come. As frustrating as JS can be, there is an immense satisfaction in finding solutions. Things I learned during this exercise: 1) If in doubt, start wherever you know. Try things. Try a lot of things. Especially in codewars (holy shit, hard af right now but super helpful and fun). 2) When working with others or in groups, make sure to try and tackle one problem at a time. Things can branch off quickly and get murky. Otherwise, I just need to keep practicing and working on as many different problems as possible.",
 	date: "07/31/2017"
 };
 let blog4 = {
@@ -32,7 +32,12 @@ let blog5 = {
 	date: "08/04/2017"
 };
 let blog6 = {
-	title: "entry6",
+	title: "Group Proj",
+	content: "",
+	date: "08/14/2017"
+};
+let blog7 = {
+	title: "entry",
 	content: "Now this is a story all about how my life got twist turned upside down, I'd like to take a minute, just sit right there, I'll tell you how I became a software developing extraordinaire.",
 	date: "08/03/2017"
 };
@@ -42,7 +47,10 @@ blogs.push(blog3);
 blogs.push(blog4);
 blogs.push(blog5);
 blogs.push(blog6);
+blogs.push(blog7);
+
 let blogContainer = document.getElementById("blog-container");
+
 for (let i = 0; i < blogs.length; i++) {
 	let currentBlog = blogs[i];
 	let blog = "";
@@ -60,5 +68,4 @@ for (let i = 0; i < blogs.length; i++) {
 // console.log(blog);
 blogContainer.innerHTML += blog;
 };
-
 
