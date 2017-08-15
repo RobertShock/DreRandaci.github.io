@@ -6,7 +6,7 @@ MAIN STYLES
 ---------------*/
 
 body {
-	background-color: #5bb689;
+	/*background-color: #5bb689;*/
 }
 header {
 	text-align: center;
@@ -26,6 +26,7 @@ h4 {
 
 h5 {
 	margin: 0;
+	padding: 1em;
 }
 
 a {
@@ -45,6 +46,7 @@ li {
 }
 p {
 	text-align: center;
+	margin-top: 0;
 }
 footer {
 	text-align: center;
@@ -62,12 +64,11 @@ h1:hover {
 }
 a:hover {
 	color: white;
-	background-color: #429369; 
-	/*font-size: 22px;*/
+	/*background-color: #429369; */
 }
-a:active {
+/*a:active {
 	font-size: 22px;
-}
+}*/
 
 /*--------------
 
@@ -87,7 +88,7 @@ Classes
 }
 .card-header {
 	text-align: center;
-	padding: 1em;
+	padding: 5% 3% 0;
 	opacity: 0.8;
 }
 
