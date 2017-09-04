@@ -83,7 +83,7 @@ searchBar.addEventListener('keypress', (e) => {
       return item.name.indexOf(txt) > -1;
     });
     //2. rerun domString
-    // domString(results);
+    domString(results);
     // printSelectedBlog(results);
   console.log(results)  
   };
