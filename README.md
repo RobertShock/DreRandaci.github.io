@@ -26,3 +26,23 @@
 - [x] Create an XHR to load the data from your local json file.
 - [x] Loop over the blogs array returned from your XHR and build up the HTML card elements using the values from your blog objects.
 - [x] Add the HTML you created in the last step to the blog-holder element.
+
+- [x] Open your main.js file and blog.html.
+
+- [x] Grid System: Use the grid system to display your blog entries. You should have 3 blog articles per row.
+
+- [x] Bootstrap Nav Bar: Should contain 3 elements:
+	- [x] Your "Logo" or personal bio site title
+	- [x] Input bar to search your blog posts (Logic specs for this in a later step). NOTE: This should only be visible from the Nav Bar on your Blog Page.
+	- [x] All of the links to your other pages on your website
+	Blog Page
+
+- [x] The elements on this page should utilize the full width of the screen.
+- [x] Update each of your blog posts so they all have a set height. Cut off any of the text that expands beyond the set height using some CSS. (Hint: checkout the overflow property).
+- [x] Whenever the user clicks on a specific blog post card, that blog should appear in a special div (that spans all 12 columns) above all of the blog posts and should show the full content of the blog. 
+- [x] When the user clicks on another blog post, it should replace the content of this special div with the content of the new blog post the user selected.
+
+Bonus: Search
+
+- [] Whenever the user types in the search bar, it should filter the blog posts. EG: The user types in "abou", the only remaining blog cards showing should be ones where your content contains the string "abou" somewhere.
+- [] Add an array of "tags" to each of your blog post entries. These can be displayed on the card or not, your choice. - [] Make it so the search function only applies to these tags. EG: The user types in "func", the only remaining blog cards showing should be ones where your tags array contains the string "func" at some index in the array.
