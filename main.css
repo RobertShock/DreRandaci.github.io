@@ -4,6 +4,18 @@
 MAIN STYLES
 
 ---------------*/
+body { 
+	padding-bottom: 70px; 
+}
+
+h1 {
+	color: #000;	
+	padding-left: .5em;
+}
+
+a {
+
+}
 
 /*body {
 	background-color: gainsboro;
@@ -12,10 +24,7 @@ MAIN STYLES
 /*header {
 	text-align: center;
 }
-h1 {
-	text-align: center;
-	color: #2B2137;
-}
+
 h2 {
 	text-align: center;
 }
@@ -81,11 +90,11 @@ Classes
 
 ---------------*/
 
-.name-styles {
+/*.name-styles {
 	text-align: left;
 	margin-left: 30px;
 	font-family: 'Raleway', sans-serif;
-}
+}*/
 .set-height {
     display: block;
     display: -webkit-box;
