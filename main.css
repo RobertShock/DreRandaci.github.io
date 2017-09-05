@@ -4,101 +4,69 @@
 MAIN STYLES
 
 ---------------*/
-body { 
-	padding-bottom: 70px; 
-}
-
-h1 {
-	color: #000;	
-	padding-left: .5em;
-}
-
-a {
-
-}
-
-/*body {
-	background-color: gainsboro;
-	border: 5px solid black;
-}*/
-/*header {
-	text-align: center;
-}
-
-h2 {
-	text-align: center;
-}
-h4 {
-	font-size: 24px;
-	margin: 0;
-}
-
-h5 {
-	margin: 0;
-	padding: 1em;
-}
-
-p {
-	text-align: center;
-	margin-top: 0;
-}
-footer {
-	text-align: center;
-	padding: 4em 0; 
-}*/
-
-/*--------------
-
-Pseudo Classes
-
----------------*/
-
-/*h1:hover {
-	color: #3B3F4C;
-}
-a:hover {
-	color: #3B3F4C;
-	/*background-color: #429369; */
-
-/*--------------
-NAVBAR
-----------------*/
-
-/*a {
-	text-decoration: none;
-	color: #2B2137;
-}
-ul {
-	text-align: center;
+* {
 	padding: 0;
-	margin: 5px;
-}*/
-/*#navMain li {
-	font-size: 17px;
-	padding: .6em;
+	margin: 0;
 }
 
-#navMain {
-	display: inline-flex;
-	list-style: none;
-	font-family: 'Muli', sans-serif;
+body { 
+	padding-bottom: 70px;
+	width: 100%;
+	height: auto;
+	/*overflow: hidden; */
+	/*background-color: #fff;*/
+}
+
+a:hover {
+	text-decoration: none;
+	/*color: #000;*/
+}
+
+/*.vectorArt {
+	position: absolute;
+	width: 100%;
+	background-size: cover;
 }*/
 
-/*--------------
+.content-wrapper {
+	width: 100%;
+}
 
-Classes
+.content-wrapper img {
+	width: 100%;
 
----------------*/
+}
 
-/*.name-styles {
-	text-align: left;
-	margin-left: 30px;
-	font-family: 'Raleway', sans-serif;
-}*/
+.text-wrapper {
+	width: 100%;
+	position: relative;
+	margin-top: -230px;
+}
+
+.text-wrapper h1 {
+	text-align: center;
+}
+
+.jumbotron h1 {
+    background-color: transparent;
+    padding-left: .5em;
+    color: #3E2D40;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 0; 
+}
+
+.navbar {
+    border-radius: 0;
+}
+
 .set-height {
     display: block;
     display: -webkit-box;
-    height: 200px;
+    height: 220px;
     margin: 0 auto;
     line-height: 1.2;
     -webkit-line-clamp: 3;
@@ -107,37 +75,6 @@ Classes
     text-overflow: ellipsis;
     margin-bottom: 20px;
 }
-/*
-.contactMe {
-	width: 500px;
-	height: 150px;
-	margin: 5%;	
-}
-.contactMe li {
-	padding: 1em;
-}
-.footer {
-	padding: 0;
-}*/
-
-/*--------------
-
-Flex layout
-
----------------*/
-
-
-/*#blog-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-#contactMeFlexbox {
-	display: flex;	
-	padding: 0;
-	margin: 2%;
-	justify-content: center;	
-}*/
 
 /*---------------
 FONTS AND COLORS
