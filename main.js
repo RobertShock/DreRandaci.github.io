@@ -7,8 +7,8 @@ const blogContainer = document.getElementById('blogContainer');
 const blogAppear = document.getElementById('blogAppear');
 const blogHeading = document.getElementById('blogHeading');
 const mainContainer = document.getElementById('mainContainer');
-const searchBar = document.getElementById('searchBar');
-let blogsArray;
+// const searchForm = document.getElementById('searchForm');
+let blogsArray = [];
 
 function blogsJsonLoad() {
 	let blogsData = JSON.parse(this.responseText).blogs;
@@ -17,7 +17,7 @@ function blogsJsonLoad() {
 };
 
 const executeThisCodeIfFileErrors = () => {
-	consle.log('error');
+	console.log('error');
 };
 
 let blogsJsonRequest = new XMLHttpRequest;
@@ -29,7 +29,7 @@ blogsJsonRequest.send();
 const domString = (blogs) => {
 	for (let i = 0; i < blogs.length; i++) {
 		let currentBlog = blogs[i];
-		let blog = "";
+		let blog = '';
 		blog += `<div class="col-md-4 col-sm-6" id='blog--${i}'>`;
 	    blog +=    `<div class="thumbnail set-height">`;
 	    blog +=    	`<div class="card-header">`;
@@ -53,9 +53,12 @@ const printSelectedBlog = (selectedBlog) => {
 	blogAppear.innerHTML = selectedBlog;
 };
 
+const printFilteredBlog = (filteredBlog) => {
+	mainContainer.innerHTML = '';
+	blogAppear.innerHTML = `<h1>${filteredBlog.content}</h1>`;
+};
+
 // Whenever the user clicks on a specific blog post card, that blog should appear in a special div (that spans all 12 columns) above all of the blog posts and should show the full content of the blog. 
-
-
 mainContainer.addEventListener('click', (e) => {
 	for (let i = 0; i < blogsArray.length; i++) {
 		if (e.target.parentNode.parentNode.parentNode.className === "col-md-4 col-sm-6") {
@@ -72,28 +75,17 @@ blogHeading.addEventListener('click', () => {
 	blogAppear.innerHTML = '';
 });
 
-
-searchBar.addEventListener('keypress', (e) => {
-	// console.log(searchBar.value);
-  if (e.key === 'Enter') {
-    let txt = searchBar.value;
-    // console.log(txt);
-    //1. filter blogs array
-    let results = blogsArray.filter((item) => {
-      return item.name.indexOf(txt) > -1;
+searchForm.addEventListener('submit', function(e){
+	e.preventDefault();	
+	let txt = document.getElementById('searchFormInputField').value;
+	console.log('you typed this:', txt)
+  	//1. filter blogs array
+    let results = blogsArray.filter(function(blog) {
+      return blog.content.indexOf(txt) > -1;
     });
     //2. rerun domString
+    // printFilteredBlog(results)
     domString(results);
-    // printSelectedBlog(results);
-  console.log(results)  
-  };
-  
+    console.log(results)
 });
-
-
-
-
-
-
-
 
