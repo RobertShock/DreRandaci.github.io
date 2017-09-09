@@ -75,10 +75,15 @@ blogHeading.addEventListener('click', () => {
 	blogAppear.innerHTML = '';
 });
 
+const clearDom = () => {
+	mainContainer.innerHTML = '';
+};
+
 searchForm.addEventListener('submit', function(e){
 	e.preventDefault();	
 	let txt = document.getElementById('searchFormInputField').value;
 	console.log('you typed this:', txt)
+	clearDom();
   	//1. filter blogs array
     let results = blogsArray.filter(function(blog) {
       return blog.content.indexOf(txt) > -1;
