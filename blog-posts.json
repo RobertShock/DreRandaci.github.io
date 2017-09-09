@@ -26,27 +26,27 @@
     },
     {
       "id": 5,
-      "title": "Group Project: Tempreture Converter af",
-      "content": "We started our first group project this week. So far, we've just put assembled the github tickets in the project folder. Getting the group brainstorming ideas on how to propagate the different coding tasks has been one of the best parts of class thus far. Having creative and different inputs on how to solve problems is incredibly motivating and inpiring. Team #fontourage is going big.",
+      "title": "Tempereture Converter af",
+      "content": "The 'Tempereture Converter' assigment was tricky. There were a few concepts that were unfamiliar but it all worked out in the end. First time dealing with event handlers and I definitely kept calling the anonymous functions incorrectly.",
       "date": "08-04-2017"
     },
     {
       "id": 6,
-      "title": "First few weeks of the code zone",
-      "content": "So far, this whole coding thing has been pretty great. CSS is definitely something I want to be good at because it will most likely frustrate me more than the other languages (look out, JS). I&#39;ve been getting better at understanding the Chrome dev tools, and that is SUPER helpful, especially for layout and just seeing where tf everything is. We had our first JS lesson last night and I&#39;m pumped to see how I digust actually making programs. Stoked!",
-      "date": "07/25/2017"
+      "title": "Group Project",
+      "content": "CSS is definitely something I want to be good at because it will most likely frustrate me more than the other languages (look out, JS). I&#39;ve been getting better at understanding the Chrome dev tools, and that is SUPER helpful, especially for layout and just seeing where tf everything is. We had our first JS lesson last night and I&#39;m pumped to see how I digust actually writing applications. Stoked!",
+      "date": "08-14-2017"
     },
     {
       "id": 7,
-      "title": "First few weeks of the code zone",
-      "content": "So far, this whole coding thing has been pretty great. CSS is definitely something I want to be good at because it will most likely frustrate me more than the other languages (look out, JS). I&#39;ve been getting better at understanding the Chrome dev tools, and that is SUPER helpful, especially for layout and just seeing where tf everything is. We had our first JS lesson last night and I&#39;m pumped to see how I digust actually making programs. Stoked!",
-      "date": "07/25/2017"
+      "title": "XHR",
+      "content": "XHR was a little weird at first and 'Seasonal Sales' was definitely a stopping point for me. I struggled the most with being able to access the objects at the appropriate times and toggling between classes when displaying the different prices on the page. I started writing the assigment one way and refactored it after going over a few concepts in class, which I think was a major factor in my confusion later in the assigment.",
+      "date": "08-29-2017"
     },
     {
       "id": 8,
-      "title": "First few weeks of the code zone",
-      "content": "So far, this whole coding thing has been pretty great. CSS is definitely something I want to be good at because it will most likely frustrate me more than the other languages (look out, JS). I&#39;ve been getting better at understanding the Chrome dev tools, and that is SUPER helpful, especially for layout and just seeing where tf everything is. We had our first JS lesson last night and I&#39;m pumped to see how I digust actually making programs. Stoked!",
-      "date": "07/25/2017"
+      "title": "BOOTYSTRAP",
+      "content": "Bootstrap rules. Hard coding CSS is a giant pain in the ass. More CSS frameworks please.",
+      "date": "09-05-2017"
     }
   ]
 }
