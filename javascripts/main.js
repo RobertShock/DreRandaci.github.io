@@ -1,27 +1,24 @@
-// Create a JSON file that contains all the information for your blog posts ("blog-posts.json") - hopefully you've been keeping up with it 😉. Validate your JSON file.
-
-// XHR now returns an array
-// Loop that iterates over the array, builds up a string, and then puts the string on the DOM (from previous exercise).
+'use strict';
 
 const blogContainer = document.getElementById('blogContainer');
 const blogAppear = document.getElementById('blogAppear');
 const blogHeading = document.getElementById('blogHeading');
 const mainContainer = document.getElementById('mainContainer');
-// const searchForm = document.getElementById('searchForm');
+const searchForm = document.getElementById('searchForm');
 let blogsArray = [];
 
-function blogsJsonLoad() {
-	let blogsData = JSON.parse(this.responseText).blogs;
-	domString(blogsData);
-	blogsArray = blogsData;
-};
+// function blogsJsonLoad() {
+// 	let blogsData = JSON.parse(this.responseText).blogs;
+// 	domString(blogsData);
+// 	blogsArray = blogsData;
+// };
 
 const executeThisCodeIfFileErrors = () => {
 	console.log('error');
 };
 
-let blogsJsonRequest = new XMLHttpRequest;
-blogsJsonRequest.addEventListener('load', blogsJsonLoad);
+let blogsJsonRequest = new XMLHttpRequest();
+// blogsJsonRequest.addEventListener('load', blogsJsonLoad);
 blogsJsonRequest.addEventListener('error', executeThisCodeIfFileErrors);
 blogsJsonRequest.open('GET', 'blog-posts.json');
 blogsJsonRequest.send();
@@ -42,7 +39,7 @@ const domString = (blogs) => {
 	    blog +=    `</div>`; 
 	    blog += `</div>`;          	    
 	    writeToDom(blog);
-	};
+	}
 };
 
 const writeToDom = (blog) => {
@@ -65,10 +62,10 @@ mainContainer.addEventListener('click', (e) => {
 			let selectedBlog = e.target.parentNode.parentNode.parentNode.innerHTML;
 			printSelectedBlog(selectedBlog);			
 		} else if (e.target.className === "entry") {
-			selectedBlog = e.target.parentNode.parentNode.innerHTML;
+			let selectedBlog = e.target.parentNode.parentNode.innerHTML;
 			printSelectedBlog(selectedBlog);			
-		};	
-	};
+		}	
+	}
 });
 
 blogHeading.addEventListener('click', () => {
@@ -82,7 +79,7 @@ const clearDom = () => {
 searchForm.addEventListener('submit', function(e){
 	e.preventDefault();	
 	let txt = document.getElementById('searchFormInputField').value;
-	console.log('you typed this:', txt)
+	console.log('you typed this:', txt);
 	clearDom();
   	//1. filter blogs array
     let results = blogsArray.filter(function(blog) {
@@ -91,6 +88,5 @@ searchForm.addEventListener('submit', function(e){
     //2. rerun domString
     // printFilteredBlog(results)
     domString(results);
-    console.log(results)
 });
 

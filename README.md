@@ -46,3 +46,34 @@ Bonus: Search
 
 - [] Whenever the user types in the search bar, it should filter the blog posts. EG: The user types in "abou", the only remaining blog cards showing should be ones where your content contains the string "abou" somewhere.
 - [] Add an array of "tags" to each of your blog post entries. These can be displayed on the card or not, your choice. - [] Make it so the search function only applies to these tags. EG: The user types in "func", the only remaining blog cards showing should be ones where your tags array contains the string "func" at some index in the array.
+
+### Add Jquery to your project for any DOM manipulation.
+
+None of the following should no longer exist in your project:
+
+- [] document.getElementById
+- [] XHRHttpRequest
+- [] addEventListener
+- [] parentNode
+- [] childNode
+- [] siblingNode
+- [] any other dom traversal with the word node
+
+#### make use of jquery things like:
+- $.get
+- .click
+- .children
+- .parent
+- .sibling
+
+Add SASS to your project for all styling. You will need to change your Gruntfile and add an NPM package.
+
+None of the following should exist in your project:
+
+- [] Hex colors (except in variable definitions)
+- [] Lots of repetative CSS - if classes share the same properties you should define that in one place and extend where needed
+- [] defining the class each time for different pseudoclasses ex. having a .card and a .card:hover - use sass nesting
+- [] You should make use of SASS things like:
+- Variables for colors
+- Extend common style
+- Nest your classes
