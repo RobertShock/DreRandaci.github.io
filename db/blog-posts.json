@@ -39,14 +39,38 @@
     {
       "id": 7,
       "title": "XHR",
-      "content": "XHR was a little weird at first and 'Seasonal Sales' was definitely a stopping point for me. I struggled the most with being able to access the objects at the appropriate times and toggling between classes when displaying the different prices on the page. I started writing the assigment one way and refactored it after going over a few concepts in class, which I think was a major factor in my confusion later in the assigment.",
+      "content": "XHR was a little weird at first and 'Seasonal Sales' was definitely a little weird. I struggled the most accessing the objects at the appropriate times and toggling between classes when displaying the different prices on the page. I started writing the assigment one way and refactored it after going over a few concepts in class, which I think played a part in my confusion later in the assigment.",
       "date": "08-29-2017"
     },
     {
       "id": 8,
-      "title": "BOOTYSTRAP",
-      "content": "Bootstrap rules. Hard coding CSS is a giant pain in the ass. More CSS frameworks please.",
+      "title": "Bootstrap",
+      "content": "Bootstrap rules. More CSS frameworks please.",
       "date": "09-05-2017"
+    },
+    {
+      "id": 9,
+      "title": "Task Runners and Browserify",
+      "content": "Browserify is amazing and I never want to go back.",
+      "date": "09-18-2017"
+    },
+    {
+      "id": 10,
+      "title": "Chatty App and jQuery",
+      "content": "The group project was an incredible learning experience. We had a broken app to present, but the workflow and features we added were fantastic practice in using all the available debugging and development tools.",
+      "date": "10-7-2017"
+    },
+    {
+      "id": 11,
+      "title": "Promises",
+      "content": "Promises are a big improvement over XHR requests. Very straightforward, although a bit tricky to debug.",
+      "date": "10-17-2017"
+    },
+    {
+      "id": 12,
+      "title": "API's",
+      "content": "Gone are the days of writing all our own JSON (aside from this blog >_>).",
+      "date": "10-24-2017"
     }
   ]
 }
