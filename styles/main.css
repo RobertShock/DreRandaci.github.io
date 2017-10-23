@@ -1,3 +1,8 @@
+/*.vectorArt {
+	position: absolute;
+	width: 100%;
+	background-size: cover;
+}*/
 /*--------------
 
 MAIN STYLES
@@ -9,57 +14,7 @@ MAIN STYLES
 
 body {
   padding-bottom: 70px;
-  width: 100%;
-  height: auto;
-  /*overflow: hidden; */
-  /*background-image: url('img/vectorArtForPersonalSite.jpg');*/ }
+  padding-top: 70px; }
 
-a:hover {
-  text-decoration: none;
-  /*color: #000;*/ }
-
-/*.vectorArt {
-	position: absolute;
-	width: 100%;
-	background-size: cover;
-}*/
-.content-wrapper {
-  width: 100%; }
-
-.content-wrapper img {
-  width: 100%; }
-
-.text-wrapper {
-  width: 100%;
-  position: relative;
-  margin-top: -230px; }
-
-.text-wrapper h1 {
-  text-align: center; }
-
-.jumbotron h1 {
-  background-color: transparent;
-  padding-left: .5em;
-  color: #3E2D40; }
-
-.page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 0; }
-
-.navbar {
-  border-radius: 0; }
-
-.set-height {
-  display: block;
-  display: -webkit-box;
-  height: 220px;
-  margin: 0 auto;
-  line-height: 1.2;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 20px; }
-
-
+.col-padding {
+  padding-top: 1em; }
