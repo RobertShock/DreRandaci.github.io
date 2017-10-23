@@ -10,10 +10,11 @@ MAIN STYLES
 	margin: 0;
 }
 
-body { 
+// required for bootstrap footer and fixed to top navbar
+body {
 	padding-bottom: 70px;
-	width: 100%;
-	height: auto;
-	/*overflow: hidden; */
-	/*background-image: url('img/vectorArtForPersonalSite.jpg');*/
+	padding-top: 70px;
+}
+.col-padding {
+	padding-top: 1em;
 }

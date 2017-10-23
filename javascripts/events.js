@@ -31,18 +31,14 @@ const clearBlogHeading = () => {
     });
 };
 
-const clearDom = () => {
-    mainContainer.html('');
-};
-
 const searchBlogs = () => {    
-    $(searchForm).submit( (e) => {        
-        clearDom();
+    $(searchForm).submit( (e) => {                
         e.preventDefault();	        
-        let txt = $('#searchFormInputField').val();       
+        dom.clearDom();
+        let txt = $('#searchFormInputField').val(); 
         let blogsArray = data.getBlogs();
-        let results = blogsArray.filter((blog) => {
-            return blog.content.indexOf(txt) > -1;
+        let results = blogsArray.filter(( blog ) => {
+            return blog.content.indexOf( txt ) > -1;
         });        
         dom.buildBlogCards(results);
     });
