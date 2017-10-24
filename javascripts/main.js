@@ -8,4 +8,5 @@ $(document).ready(function() {
 	events.searchBlogs();
 	events.clearBlogHeading();
 	events.showSelectedBlog();
+	events.fadeNavbarDown();
 });
