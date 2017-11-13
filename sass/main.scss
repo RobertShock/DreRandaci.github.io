@@ -114,8 +114,7 @@ body {
 	transition: all 0.3s;
 	opacity: 0;
 	top: -100px;
-	padding-bottom: 6px;
-	font-family: "Montserrat", sans-serif;
+	padding-bottom: 6px;	
   }
 
 .sticky {
@@ -128,4 +127,13 @@ body {
 	margin: 0 auto;
 	width: 600px;
 	height: 334px;
+}
+.navbar-no-top-margin {
+	margin-top: -70px;
+}
+.zero_top {
+	top: 0px;	
+}
+.added_search_margin {
+	margin: 10px 10px;
 }

@@ -47,8 +47,12 @@ const fadeNavbarDown = () => {
     $(window).scroll( () => {
         if ($(window).scrollTop() > 100) {
             $('.main_h').addClass('sticky');
+            $('.main_h').removeClass('hide');            
+            $('.main_nav').addClass('hide');            
         } else {
             $('.main_h').removeClass('sticky');
+            $('.main_h').addClass('hide');
+            $('.main_nav').removeClass('hide');
         }
     });
 };
