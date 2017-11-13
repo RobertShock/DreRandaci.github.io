@@ -69,8 +69,20 @@
     {
       "id": 12,
       "title": "API's",
-      "content": "Gone are the days of writing all our own JSON (aside from this blog >_>).",
+      "content": "Love API's.",
       "date": "10-24-2017"
+    },
+    {
+      "id": 13,
+      "title": "Firebase",
+      "content": "Love firebase.",
+      "date": "10-31-2017"
+    },
+    {
+      "id": 14,
+      "title": "Theme Park Group Proj",
+      "content": "Loved it.",
+      "date": "11-11-2017"
     }
   ]
 }
