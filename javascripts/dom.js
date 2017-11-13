@@ -13,10 +13,8 @@ const buildBlogCards = (blogs) => {
 		}        		
 		blogCard += `<div class="col-md-4 col-padding">`;
 		blogCard +=  `<div class="panel panel-default">`;
-		// blogCard +=	`<img src="..." alt="...">`;
 		blogCard +=		`<div class="panel-heading"><h3>${blog.title}</h3><p>${blog.date}</p></div>`;
 		blogCard +=	  	`<div class="panel-body"><p>${blog.content}</p></div>`;
-		// blogCard +=	  		`<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>`;
 		blogCard += `</div>`;
 		blogCard += `</div>`;
     if (i % 3 === 2 || i === blogs.length - 1) {

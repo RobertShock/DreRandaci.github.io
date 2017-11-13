@@ -11,6 +11,8 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.0.0",
@@ -18,7 +20,9 @@
     "matchdep": "^2.0.0"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
+    "flat-social-icons": "0.0.1",
     "jquery": "^3.2.1"
   }
 }
