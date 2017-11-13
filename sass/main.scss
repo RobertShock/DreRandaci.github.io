@@ -13,7 +13,7 @@ MAIN STYLES
 // required for bootstrap footer and fixed to top navbar
 body {
 	padding-bottom: 70px;
-	// padding-top: 70px;
+	padding-top: 70px;
 }
 .col-padding {
 	padding-top: 1em;
@@ -124,3 +124,8 @@ body {
 	top: 0px;
 	border-bottom: 1px solid gainsboro;
   }
+  .carousel-inner > .item > img {
+	margin: 0 auto;
+	width: 600px;
+	height: 334px;
+}

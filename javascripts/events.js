@@ -1,6 +1,6 @@
 'use strict';
 
-const data = require('./data');
+const firebaseApi = require('./firebaseApi');
 const dom = require('./dom');
 
 const mainContainer = $('#mainContainer');
@@ -11,7 +11,7 @@ const searchForm = $('#searchForm');
 
 const showSelectedBlog = () => {
     $(blogContainer).click( (e) => {        
-        let blogsArray = data.getBlogs();
+        let blogsArray = firebaseApi.getBlogs();
         for (let i = 0; i < blogsArray.length; i++) {            
             if (e.target.parentNode.parentNode.parentNode.className === "col-md-4 col-sm-6") {
                 let selectedBlog = e.target.parentNode.parentNode.parentNode.innerHTML;
@@ -35,7 +35,7 @@ const searchBlogs = () => {
         e.preventDefault();	        
         dom.clearDom();
         let txt = $('#searchFormInputField').val(); 
-        let blogsArray = data.getBlogs();
+        let blogsArray = firebaseApi.getBlogs();
         let results = blogsArray.filter(( blog ) => {
             return blog.content.indexOf( txt ) > -1;
         });        
@@ -52,6 +52,12 @@ const fadeNavbarDown = () => {
         }
     });
 };
-    
 
-module.exports = { searchBlogs, clearBlogHeading, showSelectedBlog, fadeNavbarDown };
+const init = () => {
+    fadeNavbarDown();
+    searchBlogs();
+    clearBlogHeading();
+    showSelectedBlog();
+};
+
+module.exports = { init };
