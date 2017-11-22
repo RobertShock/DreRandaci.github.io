@@ -8,11 +8,19 @@ app.config(function($routeProvider){
     $routeProvider
     .when( "/about", {
         templateUrl: 'partials/about.html',
-        controller: 'NameOfPageController'
+        controller: 'AboutCtrl'
     })
-    .when( "/work", {
+    .when( "/projects", {
         templateUrl: 'partials/projects.html',
-        controller: 'NameOfPageController'
+        controller: 'ProjectsCtrl'
     })
-    .otherwise('/main-view.html');
+    .when( "/blog", {
+        templateUrl: 'partials/blog.html',
+        controller: 'BlogCtrl'
+    })
+    .when( "/main-view", {
+        templateUrl: 'partials/main-view.html',
+        controller: 'MainViewCtrl'
+    })
+    .otherwise('/main-view');
 });

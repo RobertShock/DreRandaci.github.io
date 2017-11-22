@@ -1,72 +1,38 @@
-// 'use strict';
+'use strict';
 
-// const dom = require('./dom');
-// let blogsArray = [];
-// let firebaseKey = '';
+app.service("FirebaseService", function( $http, $q, FIREBASE_CONFIG ){
 
-// const setKey = ( key ) => {
-//     firebaseKey = key;
-//     retrieveBlogs();
-// };
+    const getAllProjects = () => {
+        let projects = [];
+        return $q(( resolve, reject ) => {
+            $http.get(`${FIREBASE_CONFIG.databaseURL}/projects.json`).then(( results ) => {
+                let fbProjects = results.data;
+                Object.keys(fbProjects).forEach(( key ) => {
+                    fbProjects[key].id = key;
+                    projects.push(fbProjects[key]);                    
+                });
+                resolve(projects);
+            }).catch((err) => {
+                console.log('error in getAllProjects:', err);
+            });
+        });
+    };
 
-// const blogsRequest = () => {
-//     let blogsList = [];
-//     return new Promise(( resolve, reject ) => {
-//         $.ajax(`${firebaseKey.databaseURL}/blogs.json?orderBy="id"`).then((blogs) => {
-//             if (blogs != null) {
-//             Object.keys(blogs).forEach(( key ) => {
-//                 blogs[key].id = key;
-//                 blogsList.push(blogs[key]);
-//             });
-//         }
-//             resolve(blogsList);
-//         }).catch(( err ) => {
+    const getAllBlogs = () => {
+        let blogs = [];
+        return $q(( resolve, reject ) => {
+            $http.get(`${FIREBASE_CONFIG.databaseURL}/blogs.json`).then(( results ) => {
+                let fbBlogs = results.data;
+                Object.keys(fbBlogs).forEach(( key ) => {
+                    fbBlogs[key].id = key;
+                    blogs.push(fbBlogs[key]);                    
+                });
+                resolve(blogs);
+            }).catch((err) => {
+                console.log('error in getAllBlogs:', err);
+            });
+        });
+    };
 
-//         });
-//     });
-// };
-
-// const retrieveBlogs = () => {
-//     blogsRequest().then((results) => {
-//         blogsArray = results;
-//         showResults(results);                
-//     }).catch((error) => {
-//         console.log('error in retrieveBlogs:', error);
-//     });
-// };
-
-// const showResults = (blogs) => {
-//     dom.clearDom();
-//     dom.buildBlogCards(blogs);
-// };
-
-// const getBlogs = () => {
-//     return blogsArray;
-// };
-
-// module.exports = { retrieveBlogs, getBlogs, setKey };
-// /////////////////////////////////////
-// 'use strict';
-
-// const firebaseApi = require('./firebaseApi');
-
-// const apiKeys = () => {
-//     return new Promise((resolve, reject) => {
-//         $.ajax('../db/apiKeys.json').done((data) => {
-//             resolve(data.apiKeys);
-//         }).fail((error) => {
-//             reject(error);
-//         });
-//     });
-// };
-
-// const retrieveKeys = () => {
-//     apiKeys().then((results) => {
-//         firebaseApi.setKey(results.firebaseKeys);
-//         firebase.initializeApp(results.firebaseKeys);        
-//     }).catch((error) => {
-//         console.log('error in retrieveKeys:', error);
-//     });
-// };
-
-// module.exports = { retrieveKeys };
+    return { getAllProjects, getAllBlogs };
+});
