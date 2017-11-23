@@ -6,8 +6,7 @@
             "github_url": "https://github.com/DreRandaci/weather-app",
             "img": "https://user-images.githubusercontent.com/30006986/32286425-68b73db8-befb-11e7-9640-bdbef37cb32c.gif",
             "firebase_url": "",
-            "description": "See 1, 3, and 5 day weather forecasts by zipcode using the Open Weather API."
-    
+            "description": "See 1, 3, and 5 day weather forecasts by zipcode using the Open Weather API."    
         },
         {
             "id": 2,
@@ -17,7 +16,42 @@
             "firebase_url": "",
             "Contributors": "Dre Randaci, Gib Bowden, Ken Lewis, Ben Harrington.",
             "description": "Chat app built for sending and editing messages. Users can select a theme profile that changes icons and color layout. Options for text size are included."
-    
+        },
+        {
+          "id": 3,
+          "name": "Chat App",
+          "github_url": "https://github.com/nss-evening-cohort-06/chatty-fancy-butterflies",
+          "img": "https://user-images.githubusercontent.com/30006986/30834406-99eebf50-a218-11e7-8b56-9f3e053ef105.gif",
+          "firebase_url": "",
+          "Contributors": "Dre Randaci, Gib Bowden, Ken Lewis, Ben Harrington.",
+          "description": "Chat app built for sending and editing messages. Users can select a theme profile that changes icons and color layout. Options for text size are included."
+        },
+        {
+          "id": 4,
+          "name": "Chat App",
+          "github_url": "https://github.com/nss-evening-cohort-06/chatty-fancy-butterflies",
+          "img": "https://user-images.githubusercontent.com/30006986/30834406-99eebf50-a218-11e7-8b56-9f3e053ef105.gif",
+          "firebase_url": "",
+          "Contributors": "Dre Randaci, Gib Bowden, Ken Lewis, Ben Harrington.",
+          "description": "Chat app built for sending and editing messages. Users can select a theme profile that changes icons and color layout. Options for text size are included."
+        },
+        {
+          "id": 5,
+          "name": "Chat App",
+          "github_url": "https://github.com/nss-evening-cohort-06/chatty-fancy-butterflies",
+          "img": "https://user-images.githubusercontent.com/30006986/30834406-99eebf50-a218-11e7-8b56-9f3e053ef105.gif",
+          "firebase_url": "",
+          "Contributors": "Dre Randaci, Gib Bowden, Ken Lewis, Ben Harrington.",
+          "description": "Chat app built for sending and editing messages. Users can select a theme profile that changes icons and color layout. Options for text size are included."
+        },
+        {
+          "id": 2,
+          "name": "Chat App",
+          "github_url": "https://github.com/nss-evening-cohort-06/chatty-fancy-butterflies",
+          "img": "https://user-images.githubusercontent.com/30006986/30834406-99eebf50-a218-11e7-8b56-9f3e053ef105.gif",
+          "firebase_url": "",
+          "Contributors": "Dre Randaci, Gib Bowden, Ken Lewis, Ben Harrington.",
+          "description": "Chat app built for sending and editing messages. Users can select a theme profile that changes icons and color layout. Options for text size are included."  
         }
     ],
     "blogs": [{
