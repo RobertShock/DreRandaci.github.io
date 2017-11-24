@@ -1,0 +1,29 @@
+nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+nav div a:link, nav div a:visited {
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 3px;
+    transition: 0.2s;
+}
+#nav_bar {
+    padding-right: 2em;
+}
+
+#nav_bar a {
+    padding-right: 1em;
+}
+.threed:hover {
+        box-shadow:
+                1px 1px #131313,
+                2px 2px #0b0b0b,
+                3px 3px #000000;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
