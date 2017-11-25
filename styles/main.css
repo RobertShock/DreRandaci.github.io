@@ -18,7 +18,25 @@ nav div a:link, nav div a:visited {
 #nav_bar a {
   padding-right: 1em; }
 
-.threed:hover {
-  box-shadow: 1px 1px #131313, 2px 2px #0b0b0b, 3px 3px #000000;
-  -webkit-transform: translateX(-3px);
-  transform: translateX(-3px); }
+.nav_hover:hover {
+  color: #787878; }
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+body {
+  font-family: "Open Sans", sans-serif; }
+
+#main_container {
+  margin-top: 50px; }
+
+#headshot {
+  width: 300px;
+  height: 206px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.75); }
+
+.add_padding {
+  padding-top: 4em; }

@@ -1,1 +1,18 @@
 @import 'nav';
+@import 'fonts';
+
+body {
+    font-family: $main-font;
+}
+#main_container {
+    margin-top: 50px;
+}
+#headshot {
+    width: 300px;
+    height: 206px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.75);
+}
+.add_padding {
+    padding-top: 4em;
+}
