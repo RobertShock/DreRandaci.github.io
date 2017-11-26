@@ -1,78 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<meta charset="UTF-8">
 	<title>Dre Randaci</title>
-
 	<link rel="stylesheet" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Muli|Nunito|Open+Sans|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat|Muli|Nunito|Open+Sans|Raleway">
+	<link rel="stylesheet" href="lib/node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
-
 </head>
 
-<body>
-<!-- MAIN HEADINGS -->
-<!-- START OF NAV -->		
-	<div class="container-fluid">		
-		<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container-fluid">
-				  <div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					  <span class="sr-only">Toggle navigation</span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					  <span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Welcome</a>
-				  </div>
-				  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">		      		  
-					<ul class="nav navbar-nav navbar-right">
-					  <li><a href="./pages/contact.html">Contact</a></li>				
-					  <li><a href="./pages/projects.html">Projects</a></li>
-					  <li><a href="./pages/aboutme.html">About Me</a></li>
-					  <li><a href="./pages/blog.html">Blog</a></li>
-					  <li><a href="https://teamtreehouse.com/drerandaci" target="_blank">Treehouse Profile</a></li>
-					  <li><a href="https://github.com/DreRandaci" target="_blank">Github</a></li>
-					</ul>
-				  </div>
-				</div>
-			  </nav>
-		  </div>
-	  <!-- end nav -->	
-		<div class="jumbotron">
-			<h1 class=''>Hey, I'm Dre Randaci.</h1>
-			<p class=''>A web developer and eCommerce operations manager</p>
-		</div>
-		
+<body ng-app='PersonalSite'>		
+	<div ng-include="'./partials/navbar.html'" id='nav_container'></div>	
+	<div ng-include="'./partials/main-view.html'" id='main_container'></div>
+	<div ng-include="'./partials/about.html'" id='about_container'></div>	
+	<div ng-include="'./partials/projects.html'" id='projects_container'></div>
+	<div ng-include="'./partials/blog.html'" id='blog_container'></div>
+	<div ng-include="'./partials/footer.html'" id='footer_container'></div>
+	<div ng-view></div> 
+	
 
-<!-- end main header -->
-
-<!-- START MAIN CONTENT -->
-
-
-	<!-- begin footer -->
-	<footer class="navbar navbar-default navbar-fixed-bottom">
-		<div class='container-fluid'>
-			<div class="row text-center">
-				<a href="https://twitter.com/drerandaci" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-				<a href="https://facebook.com/dre.randaci" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-				<a href="https://github.com/drerandaci" class="icon-button google-plus"><i class="icon-github"></i><span></span></a>
-				<p>&copy; Dre Randaci, 2017</p>
-			</div>			  	   
-			
-		</div>
-	</footer>
-
-
-<!-- end main content -->
 
 <!-- begin scripts -->
-	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>            
+	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>        
+
 	<script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/fe901e7f56.js"></script>
-	<script type="text/javascript" src="dist/app.js"></script>
+	<script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>		
+	<script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="lib/node_modules/angular-animate/angular-animate.min.js"></script>    
+	<script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="lib/node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+
+	<script type="text/javascript" src="javascripts/app.js"></script>
+	<script type="text/javascript" src="javascripts/AppConstants.js"></script>
+	<script type="text/javascript" src="javascripts/AppConfig.js"></script>
+
+	<script type="text/javascript" src="javascripts/services/FirebaseService.js"></script>
+	
+	<script type="text/javascript" src="javascripts/controllers/MainViewCtrl.js"></script>
+	<script type="text/javascript" src="javascripts/controllers/AboutCtrl.js"></script>
+	<script type="text/javascript" src="javascripts/controllers/NavCtrl.js"></script>
+	<script type="text/javascript" src="javascripts/controllers/ProjectsCtrl.js"></script>
+	<script type="text/javascript" src="javascripts/controllers/BlogCtrl.js"></script>
+
+	<script type="text/javascript" src="https://use.fontawesome.com/fe901e7f56.js"></script>
+
+
 </body>
 </html>
 

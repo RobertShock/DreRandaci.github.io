@@ -1,133 +1,146 @@
-/*.vectorArt {
-	position: absolute;
-	width: 100%;
-	background-size: cover;
-}*/
-/*--------------
-
-MAIN STYLES
-
----------------*/
-* {
-  padding: 0;
-  margin: 0; }
-
-body {
-  padding-bottom: 70px;
-  padding-top: 70px; }
-
-.col-padding {
-  padding-top: 1em; }
-
-/* Wrapper */
-.icon-button {
-  background-color: white;
-  border-radius: 3.6rem;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 2.0rem;
-  height: 3.6rem;
-  line-height: 3.6rem;
-  margin: 0 5px;
-  position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 3.6rem; }
-
-/* Circle */
-.icon-button span {
-  border-radius: 0;
-  display: block;
-  height: 0;
-  left: 50%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 0; }
-
-.icon-button:hover span {
-  width: 3.6rem;
-  height: 3.6rem;
-  border-radius: 3.6rem;
-  margin: -1.8rem; }
-
-.twitter span {
-  background-color: #4099ff; }
-
-.facebook span {
-  background-color: #3B5998; }
-
-.google-plus span {
-  background-color: #db5a3c; }
-
-/* Icons */
-.icon-button i {
-  background: none;
-  color: white;
-  height: 3.6rem;
-  left: 0;
-  line-height: 3.6rem;
-  position: absolute;
-  top: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 3.6rem;
-  z-index: 10; }
-
-.icon-button .icon-twitter {
-  color: #4099ff; }
-
-.icon-button .icon-facebook {
-  color: #3B5998; }
-
-.icon-button .icon-github {
-  color: #db5a3c; }
-
-.icon-button:hover .icon-twitter,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-github {
-  color: white; }
-
-.main_h {
-  position: fixed;
-  top: 0px;
-  max-height: 70px;
-  z-index: 999;
+nav {
+  height: 50px;
   width: 100%;
-  padding-top: 17px;
-  background: none;
-  overflow: hidden;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+nav div a:link, nav div a:visited {
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 3px;
+  transition: 0.2s; }
+
+#nav_bar {
+  padding-right: 2em; }
+
+#nav_bar a {
+  padding-right: 1em; }
+
+.nav_hover:hover {
+  color: #787878; }
+
+/****************
+MAIN-VIEW STYLES
+****************/
+body {
+  font-family: "Open Sans", sans-serif; }
+
+#main_container {
+  margin-top: 75px;
+  padding-bottom: 5px; }
+
+#blog_container {
+  padding-bottom: 65px; }
+
+#headshot {
+  width: 70%;
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.75); }
+
+#about_container {
+  margin: 195px 0px 100px 0px;
+  padding: 0px 95px 60px 95px;
+  letter-spacing: 1px;
+  line-height: 30px; }
+
+#greeting {
+  border-bottom: 1px solid black;
+  padding-bottom: 8px; }
+
+.add_padding {
+  padding-top: 4em; }
+
+.project_img {
+  width: 100%;
+  height: 250px; }
+
+/************************
+LINE BREAK UNDER HEADSHOT
+****************/
+.horizontal_break {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); }
+
+/*********************
+PROJECT CARDS OVERLAY
+****************/
+.content {
+  position: relative;
+  height: 250px;
+  margin: auto;
+  overflow: hidden; }
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
   opacity: 0;
-  top: -100px;
-  padding-bottom: 6px; }
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s; }
 
-.sticky {
-  background-color: rgba(255, 255, 255, 0.93);
-  opacity: 1;
-  top: 0px;
-  border-bottom: 1px solid gainsboro; }
+.content:hover .content-overlay {
+  opacity: 1; }
 
-.carousel-inner > .item > img {
-  margin: 0 auto;
-  width: 600px;
-  height: 334px; }
+.content-image {
+  width: 100%; }
 
-.navbar-no-top-margin {
-  margin-top: -70px; }
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
 
-.zero_top {
-  top: 0px; }
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1; }
 
-.added_search_margin {
-  margin: 10px 10px; }
+.content-details p {
+  color: #fff;
+  font-size: 1em; }
+
+.fadeIn-bottom {
+  top: 80%; }
+
+/****************
+FOOTER STYLES
+****************/
+.footer_links {
+  padding-top: 2em; }
+
+.footer_links a {
+  padding-right: 1em;
+  color: black; }
+
+#github:hover {
+  color: #3c7403; }
+
+#facebook:hover {
+  color: #005bbd; }
+
+#linkedIn:hover {
+  color: #009cf0; }
+
+#email:hover {
+  color: #c40000; }
