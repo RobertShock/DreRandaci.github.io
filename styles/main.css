@@ -33,12 +33,15 @@ body {
   margin-top: 75px;
   padding-bottom: 5px; }
 
+#blog_container {
+  padding-bottom: 65px; }
+
 #headshot {
   width: 70%;
   box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.75); }
 
 #about_container {
-  margin: 100px 0px;
+  margin: 195px 0px 100px 0px;
   padding: 0px 95px 60px 95px;
   letter-spacing: 1px;
   line-height: 30px; }
@@ -47,24 +50,77 @@ body {
   border-bottom: 1px solid black;
   padding-bottom: 8px; }
 
-#project_img-3 {
-  height: 89px; }
-
-#project_img-4 {
-  height: 288px; }
-
-#projects_heading {
-  border-bottom: 1px solid black;
-  padding-bottom: 5px; }
-
 .add_padding {
   padding-top: 4em; }
 
 .project_img {
   width: 100%;
-  height: 210px; }
+  height: 250px; }
 
-.flex_projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+.horizontal_break {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); }
+
+.content {
+  position: relative;
+  height: 250px;
+  margin: auto;
+  overflow: hidden; }
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s; }
+
+.content:hover .content-overlay {
+  opacity: 1; }
+
+.content-image {
+  width: 100%; }
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1; }
+
+.content-details p {
+  color: #fff;
+  font-size: 1em; }
+
+.fadeIn-bottom {
+  top: 80%; }
+
+#project_img-3 {
+  height: 89px; }
+
+#project_img-4 {
+  height: 288px; }

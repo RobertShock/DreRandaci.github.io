@@ -1,3 +1,12 @@
-<div id="blog_container" ng-controller="BlogCtrl">
-
+<div id="blog_container" class="text-center container" ng-controller="BlogCtrl">
+    <h3 id="blog_heading">Blog</h3>
+    <div class="row">
+        <div ng-repeat="blog in blogs" class="col-sm-6 col-md-4">
+            <div class="thumbnail">                                    
+                <div class="panel-heading">                                                        
+                    <h1 class="panel-title">{{blog.title}}</h1>
+                </div>               
+            </div>                
+        </div>
+    </div>
 </div>
