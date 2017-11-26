@@ -4,7 +4,7 @@
             "id": 1,
             "name": "My Weather",
             "github_url": "https://github.com/DreRandaci/weather-app",
-            "img": "https://user-images.githubusercontent.com/30006986/32286425-68b73db8-befb-11e7-9640-bdbef37cb32c.gif",
+            "img": "https://user-images.githubusercontent.com/30006986/33236043-c165995a-d215-11e7-8e15-f34f707bace5.png",
             "tech_stack": "Browserify, Grunt, jQuery, Bootstrap, ES6, Open Weather API",
             "description": "Search 1, 3, and 5 day weather forecasts by zipcode using the Open Weather API."    
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "name": "Chat App",
             "github_url": "https://github.com/nss-evening-cohort-06/chatty-fancy-butterflies",
-            "img": "https://user-images.githubusercontent.com/30006986/30834406-99eebf50-a218-11e7-8b56-9f3e053ef105.gif",
+            "img": "https://user-images.githubusercontent.com/30006986/33236064-3b458564-d216-11e7-9f49-bb96c5be8d3e.png",
             "tech_stack": "Browserify, Grunt, jQuery, Bootstrap, ES6",
             "description": "Chat app built for sending and editing messages. Users can select a theme profile that changes icons and color layout. Options for text size are included. Contributions from Dre Randaci, Gib Bowden, Ken Lewis, Ben Harrington."
         },
@@ -20,7 +20,7 @@
           "id": 3,
           "name": "Contacts App",
           "github_url": "https://github.com/DreRandaci/angular-contacts",
-          "img": "https://user-images.githubusercontent.com/30006986/33159738-ad6fba0c-cfdb-11e7-8b98-91fbf15b00b9.png",
+          "img": "https://user-images.githubusercontent.com/30006986/33236056-06aef98e-d216-11e7-825c-22bd29050d83.png",
           "tech_stack": "AngularJS, Grunt, SASS, ES6, Bootstrap, Font Awesome",
           "description": "Contacts app built for creating and saving personal contacts. Optional image upload is also included. Users can favorite or edit any contact after saving."
         },
@@ -28,7 +28,7 @@
           "id": 4,
           "name": "Temperature Converter",
           "github_url": "https://github.com/DreRandaci/Fahrenheit-to-celsius-",
-          "img": "https://user-images.githubusercontent.com/30006986/33195218-c7259228-d0a3-11e7-88fd-f6164cd86d57.png",
+          "img": "https://user-images.githubusercontent.com/30006986/33236074-716a2bb8-d216-11e7-93f8-b71e850d60e1.png",
           "tech_stack": "JavaScript, HTML, CSS",
           "description": "Users can convert temperature to and from celsius or fahrenheit. Written in vanilla JS."
         },
@@ -36,7 +36,7 @@
           "id": 5,
           "name": "Acme Explosives",
           "github_url": "https://github.com/DreRandaci/acme-explosives",
-          "img": "https://user-images.githubusercontent.com/30006986/33195390-ffa2d33a-d0a4-11e7-9457-11afc8c8af04.png",
+          "img": "https://user-images.githubusercontent.com/30006986/33236026-41c0e042-d215-11e7-8c2a-455b21434756.png",
           "tech_stack": "Grunt, NPM, ES6, Bootstrap, Animate CSS, JavaScript, jQuery",
           "description": "An app to browse coffee equipment and brewers. Users select a category from a drop down and the products associated with that category print to the DOM."
         },
@@ -44,7 +44,7 @@
           "id": 6,
           "name": "Treehouse Badges",
           "github_url": "https://github.com/DreRandaci/bigin-badges",
-          "img": "https://user-images.githubusercontent.com/30006986/33195476-f2ee594c-d0a5-11e7-9d83-6092db6d0554.png",
+          "img": "https://user-images.githubusercontent.com/30006986/33236078-8d441f9c-d216-11e7-99e4-b4ff494f7d1f.png",
           "tech_stack": "jQuery, Browserify, Grunt, Animate CSS",
           "description": "Pulls a users earned Team Treehouse badges and allows them to play around with some CSS animations using Animate CSS."
         }
